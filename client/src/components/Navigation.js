@@ -1,59 +1,33 @@
-import React from "react";
-
-function Navigation ({ currentPage, handlePageChange }) {
-
-
-    return (
-
-        <ul>
-
-            <li>
-                <a
-                    href="#About_Me"
-                    onClick={() => handlePageChange('About_Me')}
-                >
-                    About Me
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="#Portfolio"
-                    onClick={() => handlePageChange('Portfolio')}
-                >
-                    Portfolio
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="#Contact"
-                    onClick={() => handlePageChange('Contact')}
-                >
-                    Contact
-                </a>
-            </li>            
-
-            <li>
-                <a
-                    href="#Resume"
-                    onClick={() => handlePageChange('Resume')}
-                >
-                    Resume
-                </a>
-            </li>
+import * as React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
 
 
-
-        </ul>
-
-
-
-    )
-
-
-
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
 }
 
+export default function BasicTabs() {
+  const [value, setValue] = React.useState(0);
 
-export default Navigation;
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="About Me" {...a11yProps(0)} />
+          <Tab label="Portfolio" {...a11yProps(1)} />
+          <Tab label="Contact" {...a11yProps(2)} />
+          <Tab label="Resume" {...a11yProps(3)} />
+        </Tabs>
+      </Box>
+    </Box>
+  );
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0
+
+}
+
+.maintitle {
+    padding: 1rem;
+    margin: auto;
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.maintitle h5 {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
