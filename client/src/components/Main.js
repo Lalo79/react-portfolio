@@ -2,13 +2,25 @@ import React, { useState } from "react";
 import { Avatar, Button, Typography, Paper, Grid, Container, TextField } from "@mui/material";
 
 import Navigation from "./Navigation";
-import '../styles/main.css'
+import Footer from './Footer';
+import '../styles/main.css';
 
 
 export default function Main () {
 
     const [currentPage, setCurrentPage] = useState('About_Me');
     const handlePageChange = (page) => setCurrentPage(page);
+
+    // const renderPage = () => {
+    //     switch (key) {
+    //         case value:
+                
+        
+    //         default:
+    //             break;
+    //     }
+
+    // }
 
     return (
         
@@ -25,6 +37,9 @@ export default function Main () {
             </Container>
 
             {/* {renderPage()} */}
+
+            <Footer/>
+
 
         </div>
     )

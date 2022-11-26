@@ -1,0 +1,21 @@
+* {
+    margin: 0
+}
+
+.main-container {
+    display: flex;
+    justify-items: center;
+}
+
+.icon-container {
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+
+
+}
+
+img {
+    height: 3rem;
+    margin: 1rem
+}
