@@ -13,7 +13,9 @@
 My Portfolio (React)
 
 Is a simple Bio app developed in react.js in which ther are 2 fixed sections, header and footer, and a dynamic rendered section that depends of the option selected from the Nav Bar.
-  
+
+[Get to My React Portfolio](https://lalo79.github.io/react-portfolio/)
+
 ![My Portfolio Main Pic](./src/img/readme-main.png)
 
 
