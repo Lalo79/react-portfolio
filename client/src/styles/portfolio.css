@@ -1,0 +1,25 @@
+
+.appTitle {
+    background-color: rgb(243, 243, 243);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.appPic {    
+    height: 200px;
+}
+
+.appContainer {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    border: solid 1px rgb(216, 216, 216);
+    
+}
+
+.appPic-container {
+    width: 60%;
+}

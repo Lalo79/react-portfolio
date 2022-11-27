@@ -1,0 +1,25 @@
+
+.profile-pic {
+    width: 50%;
+    background-color: #f5f8fc;
+    padding: 1.4rem;
+    border: solid 1px #cadaec;
+    border-radius: 0.5rem 
+    }
+    
+    
+.about-me-main {
+    display: flex;
+    margin: 0
+    }
+
+.paragraph {
+    padding: 1.5rem
+    }
+
+.subTitle {
+    padding: 1rem 0 1rem 0.5rem;
+    width: 100%;
+}
+    
+

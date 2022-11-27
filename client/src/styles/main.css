@@ -1,17 +1,53 @@
-* {
-    margin: 0
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.masterContainer{
+    margin-top: 2rem;
+}
+
+.grand-container {
+    margin: 0;
+    padding: 0;
+    
 }
 
 .maintitle {
-    padding: 1rem;
-    margin: auto;
-    background-color: aqua;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    
+    background-image: linear-gradient(to right, #9db9db,#bfd4ec,#cadaec, #82afe2,#84b4eb);
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-.maintitle h5 {
-    margin: 0;
-    padding: 0;
-    font-family: Tahoma, sans-serif;
+.stroke-text{
+    -webkit-text-stroke:5px black;
+    -webkit-text-fill-color:transparent;
+  }
+
+
+.nav-container {    
+    margin: 1rem 0 1rem 0;
+    background-color: white;
+    
 }
+
+
+
+/* Pages main container */
+
+.main-container {
+    border-radius: 0.5rem;
+    border: solid #b8cce4 1px;
+    margin: 0;
+    padding: 1rem;
+
+}
+
