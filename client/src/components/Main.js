@@ -1,47 +1,58 @@
 import React, { useState } from "react";
-import { Avatar, Button, Typography, Paper, Grid, Container, TextField } from "@mui/material";
+import { Container } from "@mui/material";
 
+import '../styles/main.css';
+
+// Import Fixed components
 import Navigation from "./Navigation";
 import Footer from './Footer';
-import '../styles/main.css';
+
+// Import Pages components
+import AboutMe from '../pages/AboutMe'
+import Portfolio from '../pages/Portfolio'
+import Contact from "../pages/Contact";
+import Resume from "../pages/Resume";
 
 
 export default function Main () {
 
-    const [currentPage, setCurrentPage] = useState('About_Me');
+    const [currentPage, setCurrentPage] = useState('AboutMe');
     const handlePageChange = (page) => setCurrentPage(page);
 
-    // const renderPage = () => {
-    //     switch (key) {
-    //         case value:
-                
-        
-    //         default:
-    //             break;
-    //     }
+    const renderPage = () => {
+        switch (currentPage) {
+            case 'AboutMe':
+                return <AboutMe/>                
 
-    // }
+            case 'Portfolio':
+                return <Portfolio/>
+
+            case 'Contact':
+                return <Contact/>        
+                
+            case 'Resume':
+                return <Resume/>        
+        }
+    }
 
     return (
         
-        <div>
-
+        <div className="masterContainer">
             <Container >
                 <div className="maintitle">
                     <h1>My React Portfolio</h1>
-                    {/* <Typography variant="h5" >My React Portfolio</Typography> */}
-                </div>
-                <div>
-                    <Navigation className='NavContainer' currentPage={currentPage} handlePageChange={handlePageChange} />
+                    <div className="nav-container">
+                        <Navigation className='NavContainer' handlePageChange={handlePageChange} />
+                    </div>
                 </div>
             </Container>
 
-            {/* {renderPage()} */}
+            {renderPage()}            
 
             <Footer/>
 
-
         </div>
+
     )
 
 };
